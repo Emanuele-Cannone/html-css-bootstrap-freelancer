@@ -1,7 +1,7 @@
 .debug{
-  height: 50px;
-  background-color: blueviolet;
+  height: 100px;
   border: 1px solid yellow;
+  background-color: blueviolet;
 }
 
 /*header*/
@@ -10,13 +10,13 @@
   background-color: #2c3e50;
 }
 
-.jumbotron, .about{
+.jumbotron{
   background-color: #1abc9c;
 }
 
-/*sezione immagini*/
+/*sezione portfolio*/
 
-section.immagini .container>.row{
+section.portfolio>.container{
   border-radius: 5px;
 }
 
@@ -24,7 +24,7 @@ section.immagini .container>.row{
   background-color: #ba4b63;
 }
 
-#torta{
+#cake{
   background-color: #1ea4b6;
 }
 
@@ -33,10 +33,10 @@ section.immagini .container>.row{
 }
 
 #gameboy{
-  background-color: #1c83c1
+  background-color: #1c83c1;
 }
 
-#cassaforte{
+#value{
   background-color: #0e38b5;
 }
 
@@ -44,14 +44,18 @@ section.immagini .container>.row{
   background-color: #ccb2a3;
 }
 
-/* section location */
+/*section about*/
+
+section.about{
+  background-color: #1abc9c;
+}
+
+/*section location*/
 section.location{
   background-color: #3a546d;
 }
 
-
-/* footer */
-
+/*footer*/
 footer{
   background-color: #2c3e50;
 }

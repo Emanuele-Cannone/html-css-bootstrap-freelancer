@@ -1,13 +1,57 @@
 .debug{
   height: 50px;
   background-color: blueviolet;
-  border: 1px solid green;
+  border: 1px solid yellow;
 }
+
+/*header*/
 
 .header_top{
   background-color: #2c3e50;
 }
 
-.jumbotron{
+.jumbotron, .about{
   background-color: #1abc9c;
+}
+
+/*sezione immagini*/
+
+section.immagini .container>.row{
+  border-radius: 5px;
+}
+
+#casa{
+  background-color: #ba4b63;
+}
+
+#torta{
+  background-color: #1ea4b6;
+}
+
+#circo{
+  background-color: black;
+}
+
+#gameboy{
+  background-color: #1c83c1
+}
+
+#cassaforte{
+  background-color: #0e38b5;
+}
+
+#sub{
+  background-color: #ccb2a3;
+}
+
+/* section location */
+section.location{
+  background-color: #3a546d;
+}
+
+
+/* footer */
+
+footer{
+  background-color: #2c3e50;
 }

@@ -1,7 +1,10 @@
 .debug{
   height: 100px;
   /*border: 1px solid yellow;*/
-  background-color: blueviolet;
+  /*background-color: blueviolet;*/
+  border-bottom: 1px solid black;
+  text-align: left;
+  padding: 0;
 }
 
 /*riutilizzabili*/
@@ -30,6 +33,10 @@
   vertical-align: middle;
 }
 
+.font_20{
+  font-size: 20px;
+}
+
 .font_30{
   font-size: 30px;
 }
@@ -38,12 +45,32 @@
   font-size: 50px;
 }
 
+.margin_0{
+  padding: 0;
+}
+
 .padding_10{
   padding: 10px;
 }
 
+.padding_20{
+  padding: 20px;
+}
+
 .padding_30{
   padding: 30px;
+}
+
+.margin_top_10{
+  margin-top: 10px;
+}
+
+.margin_top_24{
+  margin-top: 24px;
+}
+
+.margin_bot_10{
+  margin-bottom: 10px;
 }
 
 .padding_top_30{
@@ -72,7 +99,8 @@
 
 .jumbotron, 
 #about,
-#about .btn{
+#about .btn,
+#contact .btn{
   background-color: #1abc9c;
 }
 
@@ -119,6 +147,10 @@ section#contact p.line:after{
 
 section#contact .row [class*"col-"]:last-child textarea{
   border-bottom: 1px solid black;
+}
+
+#contact .btn{
+  border-radius: 10px;
 }
 
 /*section location*/

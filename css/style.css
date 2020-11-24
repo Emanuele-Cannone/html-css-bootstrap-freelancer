@@ -4,6 +4,7 @@
   background-color: blueviolet;
 }
 
+/*riutilizzabili*/
 
 .color_white{
   color: white;
@@ -14,6 +15,39 @@
   color: #888888;
 }
 
+p.line_white:before,
+p.line_white:after{
+  content: '';
+  width: 30%;
+  display: inline-block;
+  height: 3px;
+  background-color: white;
+  margin: 15px;
+  vertical-align: middle;
+}
+
+p.line_black:before,
+p.line_black:after{
+  content: '';
+  width: 30%;
+  display: inline-block;
+  height: 3px;
+  background-color: black;
+  margin: 15px;
+  vertical-align: middle;
+}
+
+.vertical_align_middle{
+  vertical-align: middle;
+}
+
+.font_30{
+  font-size: 30px;
+}
+
+.font_50{
+  font-size: 50px;
+}
 
 /*header*/
 
@@ -26,19 +60,9 @@
   line-height: 70px;
 }
 
-.jumbotron{
+.jumbotron, 
+section.about{
   background-color: #1abc9c;
-}
-
-p.line:before,
-p.line:after{
-  content: '';
-  width: 30%;
-  display: inline-block;
-  height: 3px;
-  background-color: #fff;
-  margin: 15px;
-  vertical-align: middle;
 }
 
 
@@ -49,40 +73,15 @@ p.line:after{
     margin: 0 5px;
   }
 }
-.row.photo [class*="col-"]{
+
+.photo img{
   border-radius: 5px;
   margin: 5px 0;
-}
-
-#casa{
-  background-color: #ba4b63;
-}
-
-#cake{
-  background-color: #1ea4b6;
-}
-
-#circo{
-  background-color: black;
-}
-
-#gameboy{
-  background-color: #1c83c1;
-}
-
-#value{
-  background-color: #0e38b5;
-}
-
-#sub{
-  background-color: #ccb2a3;
+  width: 100%;
 }
 
 /*section about*/
 
-section.about{
-  background-color: #1abc9c;
-}
 
 /*section location*/
 section.location{

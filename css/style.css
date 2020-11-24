@@ -1,14 +1,32 @@
 .debug{
   height: 100px;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
   background-color: blueviolet;
 }
+
+
+.color_white{
+  color: white;
+}
+
+.btn_start{
+  background-color: #2c3e50;
+  color: #888888;
+}
+
 
 /*header*/
 
 .header_top{
   background-color: #2c3e50;
+  height: 70px;
 }
+
+.line_height_70{
+  line-height: 70px;
+}
+
+
 
 .jumbotron{
   background-color: #1abc9c;
@@ -16,8 +34,14 @@
 
 /*sezione portfolio*/
 
-section.portfolio>.container{
+@media screen and (max-width: 767px){
+  .row.photo{
+    margin: 0 5px;
+  }
+}
+.row.photo [class*="col-"]{
   border-radius: 5px;
+  margin: 5px 0;
 }
 
 #casa{

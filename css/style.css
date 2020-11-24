@@ -86,6 +86,8 @@
   border-radius: none;
 }
 
+
+
 /*header*/
 
 .header_top{
@@ -96,6 +98,12 @@
 .line_height_70{
   line-height: 70px;
 }
+
+.header_top li{
+  display: inline-block;
+  padding-right: 10px;
+}
+
 
 .jumbotron, 
 #about,

@@ -26,11 +26,21 @@
   line-height: 70px;
 }
 
-
-
 .jumbotron{
   background-color: #1abc9c;
 }
+
+p.line:before,
+p.line:after{
+  content: '';
+  width: 30%;
+  display: inline-block;
+  height: 3px;
+  background-color: #fff;
+  margin: 15px;
+  vertical-align: middle;
+}
+
 
 /*sezione portfolio*/
 

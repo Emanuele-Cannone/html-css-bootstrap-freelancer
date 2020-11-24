@@ -15,24 +15,13 @@
   color: #888888;
 }
 
-p.line_white:before,
-p.line_white:after{
+.line:before,
+.line:after{
   content: '';
   width: 30%;
   display: inline-block;
   height: 3px;
   background-color: white;
-  margin: 15px;
-  vertical-align: middle;
-}
-
-p.line_black:before,
-p.line_black:after{
-  content: '';
-  width: 30%;
-  display: inline-block;
-  height: 3px;
-  background-color: black;
   margin: 15px;
   vertical-align: middle;
 }
@@ -49,6 +38,27 @@ p.line_black:after{
   font-size: 50px;
 }
 
+.padding_10{
+  padding: 10px;
+}
+
+.padding_30{
+  padding: 30px;
+}
+
+.padding_top_30{
+  padding-top: 30px;
+}
+
+.padding_bot_30{
+  padding-bottom: 30px;
+}
+
+.no_border{
+  border: none;
+  border-radius: none;
+}
+
 /*header*/
 
 .header_top{
@@ -61,12 +71,19 @@ p.line_black:after{
 }
 
 .jumbotron, 
-section.about{
+#about,
+#about .btn{
   background-color: #1abc9c;
 }
 
 
 /*sezione portfolio*/
+
+section#portfolio p.line:before,
+section#portfolio p.line:after{
+  background-color: black;
+
+}
 
 @media screen and (max-width: 767px){
   .row.photo{
@@ -82,11 +99,39 @@ section.about{
 
 /*section about*/
 
+section#about p.line:before,
+section#about p.line:after{
+  width: 15%;
+}
+
+#about .btn{
+  border-color: white;
+}
+
+
+/*section contact*/
+
+section#contact p.line:before,
+section#contact p.line:after{
+  width: 15%;
+  background-color: black;
+}
+
+section#contact .row [class*"col-"]:last-child textarea{
+  border-bottom: 1px solid black;
+}
 
 /*section location*/
-section.location{
+section#location{
   background-color: #3a546d;
 }
+
+#location .row [class*="col-"]:nth-child(2) i{
+  width: calc(100% / 4);
+  display: inline-block;
+  font-size: 50px;
+}
+
 
 /*footer*/
 footer{
